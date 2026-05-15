@@ -1,5 +1,5 @@
-import type { CreateTaskOptions, QueuedMessage, TaskMessageQueue, TaskStore } from '../experimental/tasks/interfaces.js';
-import { isTerminal } from '../experimental/tasks/interfaces.js';
+import type { CreateTaskOptions, QueuedMessage, TaskMessageQueue, TaskStore } from '../experimental/tasks/interfaces';
+import { isTerminal } from '../experimental/tasks/interfaces';
 import type {
     GetTaskPayloadRequest,
     GetTaskRequest,
@@ -16,7 +16,7 @@ import type {
     Task,
     TaskCreationParams,
     TaskStatusNotification
-} from '../types/index.js';
+} from '../types/index';
 import {
     CancelTaskResultSchema,
     CreateTaskResultSchema,
@@ -30,11 +30,11 @@ import {
     ProtocolErrorCode,
     RELATED_TASK_META_KEY,
     TaskStatusNotificationSchema
-} from '../types/index.js';
-import type { AnyObjectSchema, AnySchema, SchemaOutput } from '../util/schema.js';
-import type { StandardSchemaV1 } from '../util/standardSchema.js';
-import type { BaseContext, NotificationOptions, RequestOptions } from './protocol.js';
-import type { ResponseMessage } from './responseMessage.js';
+} from '../types/index';
+import type { AnyObjectSchema, AnySchema, SchemaOutput } from '../util/schema';
+import type { StandardSchemaV1 } from '../util/standardSchema';
+import type { BaseContext, NotificationOptions, RequestOptions } from './protocol';
+import type { ResponseMessage } from './responseMessage';
 
 /**
  * Host interface for TaskManager to call back into Protocol. @internal

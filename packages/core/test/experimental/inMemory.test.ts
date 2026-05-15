@@ -1,8 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import type { QueuedMessage } from '../../src/experimental/tasks/interfaces.js';
-import { InMemoryTaskMessageQueue, InMemoryTaskStore } from '../../src/experimental/tasks/stores/inMemory.js';
-import type { Request, TaskCreationParams } from '../../src/types/index.js';
+import type { QueuedMessage } from '../../src/experimental/tasks/interfaces';
+import { InMemoryTaskMessageQueue, InMemoryTaskStore } from '../../src/experimental/tasks/stores/inMemory';
+import type { Request, TaskCreationParams } from '../../src/types/index';
 
 describe('InMemoryTaskStore', () => {
     let store: InMemoryTaskStore;

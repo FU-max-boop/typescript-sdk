@@ -1,6 +1,6 @@
 import type { JSONRPCMessage } from '@modelcontextprotocol/core';
 import { InMemoryTransport, LATEST_PROTOCOL_VERSION } from '@modelcontextprotocol/core';
-import { Server } from '../../src/server/server.js';
+import { Server } from '../../src/server/server';
 
 describe('Server', () => {
     describe('_oninitialize', () => {

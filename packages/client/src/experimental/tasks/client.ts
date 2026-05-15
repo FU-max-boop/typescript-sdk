@@ -28,7 +28,7 @@ import {
     ProtocolErrorCode
 } from '@modelcontextprotocol/core';
 
-import type { Client } from '../../client/client.js';
+import type { Client } from '../../client/client';
 
 /**
  * Internal interface for accessing {@linkcode Client}'s private methods.

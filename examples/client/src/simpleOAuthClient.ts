@@ -8,7 +8,7 @@ import type { CallToolResult, ListToolsRequest, OAuthClientMetadata } from '@mod
 import { Client, StreamableHTTPClientTransport, UnauthorizedError } from '@modelcontextprotocol/client';
 import open from 'open';
 
-import { InMemoryOAuthClientProvider } from './simpleOAuthClientProvider.js';
+import { InMemoryOAuthClientProvider } from './simpleOAuthClientProvider';
 
 // Configuration
 const DEFAULT_SERVER_URL = 'http://localhost:3000/mcp';

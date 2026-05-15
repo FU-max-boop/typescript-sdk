@@ -6,8 +6,8 @@
  * @module
  */
 
-import { AjvJsonSchemaValidator } from './ajvProvider.js';
-import { fromJsonSchema } from './fromJsonSchema.js';
+import { AjvJsonSchemaValidator } from './ajvProvider';
+import { fromJsonSchema } from './fromJsonSchema';
 
 /**
  * Example: wrap a raw JSON Schema object for use with registerTool.

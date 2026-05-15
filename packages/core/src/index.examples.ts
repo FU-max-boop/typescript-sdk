@@ -7,8 +7,8 @@
  * @module
  */
 
-import { AjvJsonSchemaValidator } from './validators/ajvProvider.js';
-import { CfWorkerJsonSchemaValidator } from './validators/cfWorkerProvider.js';
+import { AjvJsonSchemaValidator } from './validators/ajvProvider';
+import { CfWorkerJsonSchemaValidator } from './validators/cfWorkerProvider';
 
 /**
  * Example: AJV validator for Node.js.

@@ -9,7 +9,7 @@
 
 import type { RequestOptions } from '@modelcontextprotocol/core';
 
-import type { Client } from '../../client/client.js';
+import type { Client } from '../../client/client';
 
 /**
  * Example: Using callToolStream to execute a tool with task lifecycle events.

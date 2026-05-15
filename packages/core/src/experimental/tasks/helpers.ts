@@ -5,7 +5,7 @@
  * @experimental
  */
 
-import { SdkError, SdkErrorCode } from '../../errors/sdkErrors.js';
+import { SdkError, SdkErrorCode } from '../../errors/sdkErrors';
 
 /**
  * Type representing the task requests capability structure.

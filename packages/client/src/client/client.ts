@@ -65,7 +65,7 @@ import {
     SdkErrorCode
 } from '@modelcontextprotocol/core';
 
-import { ExperimentalClientTasks } from '../experimental/tasks/client.js';
+import { ExperimentalClientTasks } from '../experimental/tasks/client';
 
 /**
  * Elicitation default application helper. Applies defaults to the `data` based on the `schema`.

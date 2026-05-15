@@ -10,7 +10,7 @@
 import { Ajv } from 'ajv';
 import _addFormats from 'ajv-formats';
 
-import { AjvJsonSchemaValidator } from './ajvProvider.js';
+import { AjvJsonSchemaValidator } from './ajvProvider';
 
 const addFormats = _addFormats as unknown as typeof _addFormats.default;
 

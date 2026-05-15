@@ -1,31 +1,31 @@
-export * from './auth/errors.js';
-export * from './errors/sdkErrors.js';
-export * from './shared/auth.js';
-export * from './shared/authUtils.js';
-export * from './shared/metadataUtils.js';
-export * from './shared/protocol.js';
-export * from './shared/responseMessage.js';
-export * from './shared/stdio.js';
-export type { RequestTaskStore, TaskContext, TaskManagerOptions, TaskRequestOptions } from './shared/taskManager.js';
-export { extractTaskManagerOptions, NullTaskManager, TaskManager } from './shared/taskManager.js';
-export * from './shared/toolNameValidation.js';
-export * from './shared/transport.js';
-export * from './shared/uriTemplate.js';
-export * from './types/index.js';
-export * from './util/inMemory.js';
-export * from './util/schema.js';
-export * from './util/standardSchema.js';
-export * from './util/zodCompat.js';
+export * from './auth/errors';
+export * from './errors/sdkErrors';
+export * from './shared/auth';
+export * from './shared/authUtils';
+export * from './shared/metadataUtils';
+export * from './shared/protocol';
+export * from './shared/responseMessage';
+export * from './shared/stdio';
+export type { RequestTaskStore, TaskContext, TaskManagerOptions, TaskRequestOptions } from './shared/taskManager';
+export { extractTaskManagerOptions, NullTaskManager, TaskManager } from './shared/taskManager';
+export * from './shared/toolNameValidation';
+export * from './shared/transport';
+export * from './shared/uriTemplate';
+export * from './types/index';
+export * from './util/inMemory';
+export * from './util/schema';
+export * from './util/standardSchema';
+export * from './util/zodCompat';
 
 // experimental exports
-export * from './experimental/index.js';
-export * from './validators/ajvProvider.js';
+export * from './experimental/index';
+export * from './validators/ajvProvider';
 // cfWorkerProvider is intentionally NOT re-exported here: it statically imports
 // `@cfworker/json-schema` (an optional peer), and bundling it into the main barrel
 // would force that import on all Node consumers. Import via `@modelcontextprotocol/core/validators/cfWorker`
 // (used by the workerd/browser `_shims` and the public `/validators/cf-worker` subpaths).
-export type { CfWorkerSchemaDraft } from './validators/cfWorkerProvider.js';
-export * from './validators/fromJsonSchema.js';
+export type { CfWorkerSchemaDraft } from './validators/cfWorkerProvider';
+export * from './validators/fromJsonSchema';
 /**
  * JSON Schema validation
  *
@@ -53,4 +53,4 @@ export * from './validators/fromJsonSchema.js';
  */
 
 // Core types only - implementations are exported via separate entry points
-export type { JsonSchemaType, JsonSchemaValidator, jsonSchemaValidator, JsonSchemaValidatorResult } from './validators/types.js';
+export type { JsonSchemaType, JsonSchemaValidator, jsonSchemaValidator, JsonSchemaValidatorResult } from './validators/types';

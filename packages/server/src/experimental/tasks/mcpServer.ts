@@ -7,8 +7,8 @@
 
 import type { StandardSchemaWithJSON, TaskToolExecution, ToolAnnotations, ToolExecution } from '@modelcontextprotocol/core';
 
-import type { AnyToolHandler, McpServer, RegisteredTool } from '../../server/mcp.js';
-import type { ToolTaskHandler } from './interfaces.js';
+import type { AnyToolHandler, McpServer, RegisteredTool } from '../../server/mcp';
+import type { ToolTaskHandler } from './interfaces';
 
 /**
  * Internal interface for accessing {@linkcode McpServer}'s private _createRegisteredTool method.

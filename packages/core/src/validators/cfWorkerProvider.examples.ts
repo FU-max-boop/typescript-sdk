@@ -7,7 +7,7 @@
  * @module
  */
 
-import { CfWorkerJsonSchemaValidator } from './cfWorkerProvider.js';
+import { CfWorkerJsonSchemaValidator } from './cfWorkerProvider';
 
 /**
  * Example: Default configuration.

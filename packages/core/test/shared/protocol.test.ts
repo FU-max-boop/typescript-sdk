@@ -9,15 +9,15 @@ import type {
     QueuedRequest,
     TaskMessageQueue,
     TaskStore
-} from '../../src/experimental/tasks/interfaces.js';
-import { InMemoryTaskMessageQueue } from '../../src/experimental/tasks/stores/inMemory.js';
-import type { BaseContext } from '../../src/shared/protocol.js';
-import { mergeCapabilities, Protocol } from '../../src/shared/protocol.js';
-import type { ErrorMessage, ResponseMessage } from '../../src/shared/responseMessage.js';
-import { toArrayAsync } from '../../src/shared/responseMessage.js';
-import type { TaskManagerOptions } from '../../src/shared/taskManager.js';
-import { NullTaskManager, TaskManager } from '../../src/shared/taskManager.js';
-import type { Transport, TransportSendOptions } from '../../src/shared/transport.js';
+} from '../../src/experimental/tasks/interfaces';
+import { InMemoryTaskMessageQueue } from '../../src/experimental/tasks/stores/inMemory';
+import type { BaseContext } from '../../src/shared/protocol';
+import { mergeCapabilities, Protocol } from '../../src/shared/protocol';
+import type { ErrorMessage, ResponseMessage } from '../../src/shared/responseMessage';
+import { toArrayAsync } from '../../src/shared/responseMessage';
+import type { TaskManagerOptions } from '../../src/shared/taskManager';
+import { NullTaskManager, TaskManager } from '../../src/shared/taskManager';
+import type { Transport, TransportSendOptions } from '../../src/shared/transport';
 import type {
     ClientCapabilities,
     JSONRPCErrorResponse,
@@ -33,9 +33,9 @@ import type {
     ServerCapabilities,
     Task,
     TaskCreationParams
-} from '../../src/types/index.js';
-import { ProtocolError, ProtocolErrorCode, RELATED_TASK_META_KEY } from '../../src/types/index.js';
-import { SdkError, SdkErrorCode } from '../../src/errors/sdkErrors.js';
+} from '../../src/types/index';
+import { ProtocolError, ProtocolErrorCode, RELATED_TASK_META_KEY } from '../../src/types/index';
+import { SdkError, SdkErrorCode } from '../../src/errors/sdkErrors';
 
 // Test Protocol subclass for testing
 class TestProtocolImpl extends Protocol<BaseContext> {

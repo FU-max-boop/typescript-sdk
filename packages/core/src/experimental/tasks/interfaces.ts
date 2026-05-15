@@ -3,8 +3,8 @@
  * WARNING: These APIs are experimental and may change without notice.
  */
 
-import type { ServerContext } from '../../shared/protocol.js';
-import type { RequestTaskStore } from '../../shared/taskManager.js';
+import type { ServerContext } from '../../shared/protocol';
+import type { RequestTaskStore } from '../../shared/taskManager';
 import type {
     JSONRPCErrorResponse,
     JSONRPCNotification,
@@ -15,7 +15,7 @@ import type {
     Result,
     Task,
     ToolExecution
-} from '../../types/index.js';
+} from '../../types/index';
 
 // ============================================================================
 // Task Handler Types (for registerToolTask)

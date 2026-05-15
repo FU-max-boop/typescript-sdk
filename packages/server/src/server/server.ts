@@ -56,7 +56,7 @@ import {
 } from '@modelcontextprotocol/core';
 import { DefaultJsonSchemaValidator } from '@modelcontextprotocol/server/_shims';
 
-import { ExperimentalServerTasks } from '../experimental/tasks/server.js';
+import { ExperimentalServerTasks } from '../experimental/tasks/server';
 
 /**
  * Extended tasks capability that includes runtime configuration (store, messageQueue).
