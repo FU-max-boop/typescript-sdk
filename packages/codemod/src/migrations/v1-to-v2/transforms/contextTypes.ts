@@ -1,10 +1,10 @@
 import type { SourceFile } from 'ts-morph';
 import { Node, SyntaxKind } from 'ts-morph';
 
-import type { Diagnostic, Transform, TransformContext, TransformResult } from '../../../types.js';
-import { info, warning } from '../../../utils/diagnostics.js';
-import { hasMcpImports } from '../../../utils/importUtils.js';
-import { CONTEXT_PROPERTY_MAP, CTX_PARAM_NAME, EXTRA_PARAM_NAME } from '../mappings/contextPropertyMap.js';
+import type { Diagnostic, Transform, TransformContext, TransformResult } from '../../../types';
+import { info, warning } from '../../../utils/diagnostics';
+import { hasMcpImports } from '../../../utils/importUtils';
+import { CONTEXT_PROPERTY_MAP, CTX_PARAM_NAME, EXTRA_PARAM_NAME } from '../mappings/contextPropertyMap';
 
 const HANDLER_METHODS = new Set(['setRequestHandler', 'setNotificationHandler']);
 

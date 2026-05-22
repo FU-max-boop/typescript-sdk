@@ -1,9 +1,9 @@
 import { Project } from 'ts-morph';
 
-import type { Diagnostic, FileResult, Migration, RunnerOptions, RunnerResult } from './types.js';
-import { error } from './utils/diagnostics.js';
-import { updatePackageJson } from './utils/packageJsonUpdater.js';
-import { analyzeProject } from './utils/projectAnalyzer.js';
+import type { Diagnostic, FileResult, Migration, RunnerOptions, RunnerResult } from './types';
+import { error } from './utils/diagnostics';
+import { updatePackageJson } from './utils/packageJsonUpdater';
+import { analyzeProject } from './utils/projectAnalyzer';
 
 function escapeGlobPath(p: string): string {
     return p.replaceAll(/[[\]{}()*?!@#]/g, String.raw`\$&`);

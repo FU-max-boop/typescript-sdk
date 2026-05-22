@@ -1,10 +1,10 @@
 import type { SourceFile } from 'ts-morph';
 import { Node, SyntaxKind } from 'ts-morph';
 
-import type { Diagnostic, Transform, TransformContext, TransformResult } from '../../../types.js';
-import { warning } from '../../../utils/diagnostics.js';
-import { isImportedFromMcp, removeUnusedImport, resolveOriginalImportName } from '../../../utils/importUtils.js';
-import { NOTIFICATION_SCHEMA_TO_METHOD, SCHEMA_TO_METHOD } from '../mappings/schemaToMethodMap.js';
+import type { Diagnostic, Transform, TransformContext, TransformResult } from '../../../types';
+import { warning } from '../../../utils/diagnostics';
+import { isImportedFromMcp, removeUnusedImport, resolveOriginalImportName } from '../../../utils/importUtils';
+import { NOTIFICATION_SCHEMA_TO_METHOD, SCHEMA_TO_METHOD } from '../mappings/schemaToMethodMap';
 
 const ALL_SCHEMA_TO_METHOD: Record<string, string> = {
     ...SCHEMA_TO_METHOD,

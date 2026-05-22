@@ -1,5 +1,5 @@
-import type { Diagnostic } from '../types.js';
-import { DiagnosticLevel } from '../types.js';
+import type { Diagnostic } from '../types';
+import { DiagnosticLevel } from '../types';
 
 export function error(file: string, line: number, message: string): Diagnostic {
     return { level: DiagnosticLevel.Error, file, line, message };
